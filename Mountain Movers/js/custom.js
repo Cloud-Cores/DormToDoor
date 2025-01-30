@@ -7,6 +7,9 @@
     $('.navbar-collapse a').on('click',function(){
       $(".navbar-collapse").collapse('hide');
     });
+
+
+  
     
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
