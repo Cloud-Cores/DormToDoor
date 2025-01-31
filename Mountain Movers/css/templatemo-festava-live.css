@@ -1694,14 +1694,66 @@ section.about-us .right-content p {
 /*---------------------------------------
 LOCATIONS PAGE STYLES              
 -----------------------------------------*/
+
+/* Locations Section Styling */
+/* Locations Section Styling */
 .locations-section {
-  padding-top: 120px;
-  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+              url('../images/university-bg.jpg') center/cover;
+  padding: 80px 0;
+  margin: 40px 0;
+  border-top: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .locations-section h2 {
-  margin-bottom: 20px;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
+.locations-section .search-instruction {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.finder-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.finder-container:hover {
+  transform: translateY(-5px);
+}
+
+.finder-container .custom-btn.main {
+  min-width: 250px;
+  font-size: 1.3rem;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.finder-container .custom-btn.main:hover {
+  transform: scale(1.05);
+}
+
+.finder-container p {
+  color: var(--p-color);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
 
 .search-instruction {
   margin-bottom: 30px;
