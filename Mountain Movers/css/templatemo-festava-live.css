@@ -1472,114 +1472,193 @@ section.about-us .right-content p {
   margin-bottom: 30px;
 }
 
+
+#university-map-container {
+  padding: 40px 20px;
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-medium);
+  margin: 60px auto 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 90%;
+}
+
+#university-map-container h3 {
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.university-map {
+  border-radius: var(--border-radius-medium);
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: clamp(300px, 50vw, 450px);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #university-map-container {
+      padding: 20px 10px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #university-map-container {
+      padding: 15px 5px;
+      margin-top: 30px;
+  }
+}
+
+
 /*---------------------------------------
   PRICING SERVICES DESIGN (Refined)
 -----------------------------------------*/
+.services-section {
+  background-color: var(--section-bg-color);
+  padding: 100px 0;
+}
+
 .services-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 40px;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
+
+
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
 .service-item {
   background: #ffffff;
   border-radius: var(--border-radius-medium);
-  padding: 35px 25px;
+  padding: 40px 30px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
-}
-/* Add hover effect for an elevated feel */
-.service-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Service Title */
 .service-item h4 {
   color: var(--secondary-color);
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--secondary-color); /* Changed to orange to match theme */
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  height: 50px;
 }
 
-/* Price Styling */
-.service-item .price-tag {
-  color: var(--custom-btn-bg-color);
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-weight-bold);
-  background: rgba(255, 165, 0, 0.1); /* Soft background for price */
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
 
-/* Text */
-.service-item p {
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  line-height: 1.6;
-  flex-grow: 1;
-  margin: 0;
-}
-
-/* CTA Button */
-.service-item .cta-btn {
-  display: inline-block;
-  background: var(--custom-btn-bg-color);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
-  border-radius: var(--border-radius-large);
-  padding: 12px 20px;
-  margin-top: 20px;
-  transition: all 0.3s;
-}
-
-.service-item .cta-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
-}
 .service-item .price-tag {
   font-size: 24px;
   color: var(--custom-btn-bg-color);
   font-weight: var(--font-weight-bold);
-  margin: 15px 0;
+  margin: 20px 0;
 }
+
+.service-item p {
+  color: var(--p-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .services-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/*---------------------------------------
+  Custom Navbar Styling (Fixed)
+-----------------------------------------*/
+.dark-nav {
+  background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-section-title h2 {
+  color: var(--primary-color);  /* This makes the search title yellow */
+}
+
+
+.dark-nav .navbar-nav .nav-link {
+  color: var(--white-color);
+  padding: 15px 20px;
+}
+
+.dark-nav .navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.dark-nav .navbar-toggler {
+  border-color: var(--white-color);
+}
+
+.dark-nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.services-section {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.about-section-title h2 {
+  color: var(--dark-color);  /* Changes search title to black */
+}
+
+
 
 /*---------------------------------------
   BACK BUTTON STYLING (Fixed)
 -----------------------------------------*/
 .back-btn {
-  display: inline-block;
-  background: var(--secondary-color);
-  color: var(--white-color);
-  font-size: var(--btn-font-size);
-  font-weight: var(--font-weight-bold);
-  border-radius: var(--border-radius-large);
-  padding: 12px 30px; /* Increased padding for better visibility */
-  margin-bottom: 30px;
-  text-align: center;
-  border: none;
-  transition: all 0.3s ease-in-out;
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius-large);
+    padding: 12px 30px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .back-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  color: var(--white-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: var(--custom-btn-bg-hover-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
+
 
 
 /*---------------------------------------
@@ -1616,23 +1695,34 @@ section.about-us .right-content p {
 LOCATIONS PAGE STYLES              
 -----------------------------------------*/
 .locations-section {
+  padding-top: 120px;
   text-align: center;
-  padding: 80px 20px;
-  background-color: var(--section-bg-color);
 }
 
-/* Search Bar */
+.locations-section h2 {
+  margin-bottom: 20px;
+}
+
+.search-instruction {
+  margin-bottom: 30px;
+}
+
 .search-container {
   position: relative;
-  margin: 20px auto 40px;
+  margin: 0 auto;
   max-width: 500px;
 }
 
-.search-container {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
+#search-bar {
+  margin-bottom: 20px;
 }
+
+.search-btn {
+  margin-top: 30px;
+}
+
+
+
 
 .dropdown-menu {
   width: 100%;
@@ -1653,19 +1743,39 @@ LOCATIONS PAGE STYLES
   background: var(--section-bg-color);
 }
 
+
+.search-btn {
+  padding: 15px 60px;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
 #search-bar {
+  width: 100%;
   padding: 15px 20px;
   font-size: 18px;
   border-radius: var(--border-radius-medium);
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--secondary-color);
   text-align: center;
 }
+
 .search-instruction {
   margin-bottom: 40px;
   color: var(--p-color);
   font-size: var(--p-font-size);
 }
 
+/* Add this for the separator */
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--secondary-color);
+  margin: 80px 0;
+  opacity: 0.3;
+}
 
 
 /* University List */
