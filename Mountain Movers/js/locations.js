@@ -8,6 +8,11 @@ const universities = [
     { name: "Lafayette College", id: "Lafayette" }
 ];
 
+function handleUniversitySelection(university) {
+    localStorage.setItem('selectedUniversity', university.name);
+    window.location.href = 'university.html';
+}
+
 function showSuggestions() {
     const input = document.getElementById("search-bar");
     const inputValue = input.value.toLowerCase();
@@ -20,7 +25,7 @@ function showSuggestions() {
         return;
     }
 
-    const matches = universities.filter(univ => 
+    const matches = universities.filter(univ =>
         univ.name.toLowerCase().includes(inputValue)
     );
 
@@ -37,7 +42,7 @@ function showSuggestions() {
             li.onclick = () => {
                 input.value = univ.name;
                 suggestionsList.style.display = "none";
-                openUniversityPage(univ.id);  // Using the university ID to open the details page
+                handleUniversitySelection(univ);
             };
             suggestionsList.appendChild(li);
         });
@@ -47,7 +52,19 @@ function showSuggestions() {
     }
 }
 
-// Close suggestions when clicking outside
+// Add click handlers for university cards
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.university-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const universityId = card.dataset.university;
+            const university = universities.find(u => u.id === universityId);
+            if (university) {
+                handleUniversitySelection(university);
+            }
+        });
+    });
+});
+
 document.addEventListener("click", (e) => {
     const searchBar = document.getElementById("search-bar");
     const suggestionsList = document.getElementById("suggestions-list");
@@ -56,6 +73,4 @@ document.addEventListener("click", (e) => {
     }
 });
 
-
-// Add input event listener
 document.getElementById("search-bar").addEventListener("input", showSuggestions);
