@@ -330,8 +330,8 @@ strong {
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
-  transform: scale(0.8);
-  transition: 0.7s ease-in;
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
 }
 /* lets begin button, on hover arrow animation */
 
@@ -1349,7 +1349,9 @@ section.about-us .right-content p {
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
-  transform: scale(0.8);
+  /* submit btn hover animation */
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
 }
 
 /*---------------------------------------
