@@ -341,7 +341,7 @@ strong {
 
 .custom-btn .arrow {
   position: absolute;
-  right: -6px; /* Start off-screen */
+  right: 3px;
   opacity: 0;
   font-size: 33px;
   font-weight: bolder;
@@ -354,7 +354,7 @@ strong {
 }
 
 .custom-btn:hover .arrow {
-  right: 30px;
+  left: 63%;
   opacity: 1;
   animation: bounceArrow 0.5s infinite alternate;
 }
@@ -364,7 +364,7 @@ strong {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(5px);
+    transform: translateX(-5px);
   }
 }
 
