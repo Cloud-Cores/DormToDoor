@@ -6,51 +6,48 @@ https://templatemo.com/tm-583-festava-live
 m
 */
 
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
-  --headerColor:                  #1a1a1a;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color: #ffffff;
+  --primary-color: #f8cb2e;
+  --secondary-color: #ee5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #ee5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --headerColor: #1a1a1a;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #b22727;
   --bodyTextColor: #4e4b66;
 
+  --body-font-family: "Outfit", sans-serif;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --btn-font-size: 14px;
+  --copyright-font-size: 16px;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --btn-font-size:                14px;
-  --copyright-font-size:          16px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
-
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -97,7 +94,6 @@ h5 {
   color: #4e4f52;
 }
 
-
 h6 {
   font-size: var(--h6-font-size);
 }
@@ -114,7 +110,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -153,12 +149,12 @@ strong {
 
 .link-fx-1:hover::before {
   transform: translateX(17px) scaleX(0);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .link-fx-1:hover .icon circle {
   stroke-dashoffset: 200;
-  transition: stroke-dashoffset .2s .1s;
+  transition: stroke-dashoffset 0.2s 0.1s;
 }
 
 .link-fx-1:hover .icon line {
@@ -178,7 +174,7 @@ strong {
   height: 1px;
   background-color: currentColor;
   transform-origin: right center;
-  transition: transform .2s .1s;
+  transition: transform 0.2s 0.1s;
 }
 
 .link-fx-1 .icon {
@@ -204,18 +200,17 @@ strong {
 .link-fx-1 .icon circle {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
-  transition: stroke-dashoffset .2s;
+  transition: stroke-dashoffset 0.2s;
 }
 
 .link-fx-1 .icon line {
-  transition: transform .4s;
+  transition: transform 0.4s;
   transform-origin: 13px 15px;
 }
 
 .link-fx-1 .icon line:last-child {
   transform-origin: 19px 15px;
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -265,6 +260,7 @@ strong {
   border-radius: var(--border-radius-large);
   border-bottom: 0;
   padding: 15px;
+  /* margin-block: 10px; */
 }
 
 .nav-tabs .nav-link {
@@ -278,26 +274,29 @@ strong {
   margin-right: 15px;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--primary-color);
+}
+.nav-link:hover {
+  transform: scaleX(1.2);
+  transition: 0.6s ease-in;
 }
 
 .nav-tabs h5 {
-  color: var(--p-color); 
+  color: var(--p-color);
   margin-bottom: 0;
 }
 
-.nav-tabs .nav-link.active h5,
-.nav-tabs .nav-link:focus h5, 
-.nav-tabs .nav-link:hover h5 {
+.nav-tabs .nav-link.active h6,
+.nav-tabs .nav-link:focus h6,
+.nav-tabs .nav-link:hover h6 {
   color: var(--primary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -305,7 +304,6 @@ strong {
 .custom-icon {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -321,6 +319,7 @@ strong {
   align-content: center;
   transition: all 0.3s;
   padding: 15px 20px;
+  position: relative;
 }
 
 .custom-btn.main {
@@ -331,6 +330,42 @@ strong {
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
+  transform: scale(0.8);
+  transition: 0.7s ease-in;
+}
+/* lets begin button, on hover arrow animation */
+
+.custom-btn .text {
+  transition: transform 0.3s ease;
+}
+
+.custom-btn .arrow {
+  position: absolute;
+  right: -6px; /* Start off-screen */
+  opacity: 0;
+  font-size: 33px;
+  font-weight: bolder;
+  transition: opacity 0.3s ease, right 0.3s ease;
+  bottom: 12px;
+}
+
+.custom-btn:hover .text {
+  transform: translateX(-10px);
+}
+
+.custom-btn:hover .arrow {
+  right: 30px;
+  opacity: 1;
+  animation: bounceArrow 0.5s infinite alternate;
+}
+
+@keyframes bounceArrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
 }
 
 .custom-border-btn {
@@ -351,8 +386,6 @@ strong {
   color: var(--white-color);
 }
 
-
-
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
@@ -369,7 +402,6 @@ strong {
   height: 100%;
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -378,7 +410,6 @@ strong {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -423,7 +454,7 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
@@ -451,7 +482,8 @@ strong {
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -476,14 +508,15 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--white-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -493,7 +526,6 @@ strong {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
-
 
 /*---------------------------------------
   HERO        
@@ -526,12 +558,11 @@ strong {
   height: 100%;
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
+  background-image: url("../images/edward-unsplash-blur.jpg");
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
@@ -541,6 +572,15 @@ strong {
 .about-image {
   border-radius: var(--border-radius-medium);
   display: block;
+}
+.artist-img-effect {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.artist-img-effect:hover {
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transform: perspective(650px) translate3d(0px, 0px, 50px) scale(0.85)
+    rotateY(6deg);
+  box-shadow: 0 90px 50px -20px rgba(0, 0, 0, 0.3);
 }
 
 .about-text-wrap {
@@ -571,12 +611,11 @@ strong {
   padding: 35px;
 }
 
-
 /*---------------------------------------
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url("../images/nicholas-green-unsplash-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -607,7 +646,6 @@ strong {
   height: 100%;
 }
 
-
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
@@ -621,11 +659,11 @@ strong {
   border-radius: var(--border-radius-medium);
   display: block;
   width: fit-content;
-
 }
 
 .artists-thumb:hover .artists-hover {
   transform: translateY(0);
+  transition: 0.7s ease-in;
   opacity: 1;
 }
 
@@ -667,9 +705,7 @@ strong {
 
 .artists-hover hr {
   margin: 1.5rem 0;
-  
 }
-
 
 /*-- -------------------------- -->
 <---            FAQ             -->
@@ -681,325 +717,318 @@ strong {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-	#faq-1720 {
-	  padding: var(--sectionPadding);
-	  position: relative;
-	}
-	#faq-1720 .cs-container {
-	  width: 100%;
-	  max-width: 80rem;
-	  margin: auto;
+  #faq-1720 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #faq-1720 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
     margin-bottom: 100px;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  /* 48px - 64px */
-	  position: relative;
-	  z-index: 1;
-	}
-	#faq-1720 .cs-content {
-	  /* set text align to left if content needs to be left aligned */
-	  text-align: left;
-	  width: 100%;
-	  display: flex;
-	  flex-direction: column;
-	  /* centers content horizontally, set to flex-start to left align */
-	  align-items: flex-start;
-	}
-	#faq-1720 .cs-title {
-	  margin: 0;
-	}
-	#faq-1720 .cs-flex-group {
-	  width: 100%;
-	  overflow: hidden;
-	  display: flex;
-	  flex-direction: column;
-	  /* 16px - 20px */
-	  gap: clamp(1rem, 2.3vw, 1.25rem);
-	  position: relative;
-	}
-	#faq-1720 .cs-wrapper {
-	  width: 100%;
-	  position: relative;
-	}
-	#faq-1720 .cs-button-group {
-	  width: 100%;
-	  display: flex;
-	  flex-direction: column;
-	  /* 16px - 20px */
-	  gap: clamp(1rem, 2.5vw, 1.25rem);
-	  /* prevents flexbox from squishing it */
-	  flex: none;
-	}
-	#faq-1720 .cs-flex {
-	  width: 100%;
-	  /* 24px - 32px */
-	  padding: clamp(1.5rem, 3vw, 2rem);
-	  background-color: #F7F7F7;
-	  display: flex;
-	  flex-direction: column;
-	  order: 3;
-	  gap: 1.25rem;
-	}
-	#faq-1720 .cs-option {
-	  /* 16px - 20px */
-	  font-size: clamp(1rem, 2vw, 1.25rem);
-	  line-height: 1.2em;
-	  font-weight: 600;
-	  padding: 0;
-	  color: var(--bodyTextColor);
-	  background-color: transparent;
-	  border: none;
-	  display: flex;
-	  justify-content: flex-start;
-	  align-items: center;
-	  gap: 0.5rem;
-	  position: relative;
-	  z-index: 1;
-	  transition: color .3s;
-	}
-	#faq-1720 .cs-option:hover {
-	  color: var(--custom-btn-bg-color);
-	  cursor: pointer;
-	}
-	#faq-1720 .cs-option.cs-active {
-	  color: var(--custom-btn-bg-color);
-	}
-	#faq-1720 .cs-picture {
-	  width: 100%;
-	  /* 328px - 450px */
-	  height: clamp(20.5rem, 30vw, 28.125rem);
-	  /* 16px - 20px */
-	  margin: 0 0 clamp(1rem, 2.4vw, 1.25rem);
-	  order: 2;
-	  position: relative;
-	  z-index: 1;
-	}
-	#faq-1720 .cs-picture img {
-	  width: 100%;
-	  height: 100%;
-	  object-fit: cover;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	}
-	#faq-1720 .cs-faq-group {
-	  width: 100%;
-	  padding: 0;
-	  margin: 0;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  flex-direction: column;
-	  order: 3;
-	  gap: 0.5rem;
-	  transition: transform 0.7s,
-				  opacity 0.3s,
-				  visibility 0.5s,
-				  top 0.3s,
-				  left 0.3s;
-	  /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
-	  transform-origin: top;
-	  transform-style: preserve-3d;
-	  perspective: 900px;
-	}
-	#faq-1720 .cs-faq-group.cs-hidden {
-	  /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
-	  visibility: hidden;
-	  /* prevents the mouse from interacting with it */
-	  pointer-events: none;
-	  /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
-	  opacity: 0;
-	  /* this top and left value help control the animation, by setting it to position absolute and left 0, the FAQ won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-flex-group (left: 0). Same for the bottom:0 value, the FAQ won't go past that position when it animates */
-	  top: 0;
-	  left: 0;
-	  position: absolute;
-	  /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
-	  transform: scaleY(0);
-	}
-	#faq-1720 .cs-faq-group.cs-hidden .cs-faq-item {
-	  transform: rotateX(270deg);
-	  opacity: 0;
-	}
-	#faq-1720 .cs-faq-item {
-	  list-style: none;
-	  width: 100%;
-	  /* clips all corners of the button that overlap the rounded border */
-	  overflow: hidden;
-	  opacity: 1;
-	  top: 0;
-	  transform: rotateX(0deg);
-	  transition: transform 0.6s,
-				  opacity 0.3s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(2) {
-	  transition-delay: 0.1s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(3) {
-	  transition-delay: 0.2s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(4) {
-	  transition-delay: 0.3s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(5) {
-	  transition-delay: 0.4s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(6) {
-	  transition-delay: 0.5s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(7) {
-	  transition-delay: 0.6s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(8) {
-	  transition-delay: 0.7s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(9) {
-	  transition-delay: 0.8s;
-	}
-	#faq-1720 .cs-faq-item:nth-of-type(10) {
-	  transition-delay: 0.9s;
-	}
-	#faq-1720 .cs-faq-item.active .cs-button {
-	  color: var(--custom-btn-bg-color);
-	}
-	#faq-1720 .cs-faq-item.active .cs-button:before {
-	  background-color: var(--custom-btn-bg-color);
-	  transform: rotate(315deg);
-	}
-	#faq-1720 .cs-faq-item.active .cs-button:after {
-	  background-color: var(--custom-btn-bg-color);
-	  transform: rotate(-315deg);
-	}
-	#faq-1720 .cs-faq-item.active .cs-item-p {
-	  height: auto;
-	  /* 20px - 24px bottom */
-	  /* 16px - 24px left & right */
-	  padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
-	  opacity: 1;
-	}
-  
-	#faq-1720 .cs-button {
-	  /* 16px - 20px */
-	  font-size: clamp(1rem, 2vw, 1.25rem);
-	  line-height: 1.2em;
-	  text-align: left;
-	  font-weight: 500;
-	  /* 16px - 24px top & bottom */
-	  /* 16px - 20px left & right */
-	  padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 1.25rem);
-	  background-color: #f7f7f7;
-	  border: none;
-	  color: var(--headerColor);
-	  display: block;
-	  width: 100%;
-	  position: relative;
-	  transition: background-color 0.3s, color 0.3s;
-	}
-	#faq-1720 .cs-button:hover {
-	  cursor: pointer;
-	}
-	#faq-1720 .cs-button:before {
-	  /* left line */
-	  content: "";
-	  width: 0.5rem;
-	  height: 0.125rem;
-	  background-color: var(--headerColor);
-	  opacity: 1;
-	  border-radius: 50%;
-	  position: absolute;
-	  display: block;
-	  top: 50%;
-	  right: 1.5rem;
-	  transform: rotate(45deg);
-	  /* animate the transform from the left side of the x axis, and the center of the y */
-	  transform-origin: left center;
-	  transition: transform 0.5s;
-	}
-	#faq-1720 .cs-button:after {
-	  /* right line */
-	  content: "";
-	  width: 0.5rem;
-	  height: 0.125rem;
-	  background-color: var(--headerColor);
-	  opacity: 1;
-	  border-radius: 50%;
-	  position: absolute;
-	  display: block;
-	  top: 50%;
-	  right: 1.3125rem;
-	  transform: rotate(-45deg);
-	  /* animate the transform from the right side of the x axis, and the center of the y */
-	  transform-origin: right center;
-	  transition: transform 0.5s;
-	}
-	#faq-1720 .cs-button-text {
-	  width: 80%;
-	  display: block;
-	}
-	#faq-1720 .cs-item-p {
-	  /* 14px - 16px */
-	  font-size: clamp(0.875rem, 1.5vw, 1rem);
-	  line-height: 1.5em;
-	  width: 100%;
-	  height: 0;
-	  margin: 0;
-	  /* 16px - 24px */
-	  padding: 0 clamp(1rem, 2vw, 1.5rem);
-	  opacity: 0;
-	  background-color: #f7f7f7;
-	  color: #333333;
-	  /* clips the text so it doesn't show up */
-	  overflow: hidden;
-	  transition: opacity 0.3s, padding-bottom 0.3s;
-	}
-  #faq-1720 .cs-item-p span{
-	  /* 14px - 16px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    position: relative;
+    z-index: 1;
+  }
+  #faq-1720 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #faq-1720 .cs-title {
+    margin: 0;
+  }
+  #faq-1720 .cs-flex-group {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
+    position: relative;
+  }
+  #faq-1720 .cs-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  #faq-1720 .cs-button-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #faq-1720 .cs-flex {
+    width: 100%;
+    /* 24px - 32px */
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    gap: 1.25rem;
+  }
+  #faq-1720 .cs-option {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    font-weight: 600;
+    padding: 0;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  #faq-1720 .cs-option:hover {
+    color: var(--custom-btn-bg-color);
+    cursor: pointer;
+  }
+  #faq-1720 .cs-option.cs-active {
+    color: var(--custom-btn-bg-color);
+  }
+  #faq-1720 .cs-picture {
+    width: 100%;
+    /* 328px - 450px */
+    height: clamp(20.5rem, 30vw, 28.125rem);
+    /* 16px - 20px */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.25rem);
+    order: 2;
+    position: relative;
+    z-index: 1;
+  }
+  #faq-1720 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #faq-1720 .cs-faq-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 3;
+    gap: 0.5rem;
+    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s,
+      left 0.3s;
+    /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
+    transform-origin: top;
+    transform-style: preserve-3d;
+    perspective: 900px;
+  }
+  #faq-1720 .cs-faq-group.cs-hidden {
+    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+    visibility: hidden;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+    opacity: 0;
+    /* this top and left value help control the animation, by setting it to position absolute and left 0, the FAQ won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-flex-group (left: 0). Same for the bottom:0 value, the FAQ won't go past that position when it animates */
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+    transform: scaleY(0);
+  }
+  #faq-1720 .cs-faq-group.cs-hidden .cs-faq-item {
+    transform: rotateX(270deg);
+    opacity: 0;
+  }
+  #faq-1720 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    /* clips all corners of the button that overlap the rounded border */
+    overflow: hidden;
+    opacity: 1;
+    top: 0;
+    transform: rotateX(0deg);
+    transition: transform 0.6s, opacity 0.3s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(2) {
+    transition-delay: 0.1s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(3) {
+    transition-delay: 0.2s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(4) {
+    transition-delay: 0.3s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(5) {
+    transition-delay: 0.4s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(6) {
+    transition-delay: 0.5s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(7) {
+    transition-delay: 0.6s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(8) {
+    transition-delay: 0.7s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(9) {
+    transition-delay: 0.8s;
+  }
+  #faq-1720 .cs-faq-item:nth-of-type(10) {
+    transition-delay: 0.9s;
+  }
+  #faq-1720 .cs-faq-item.active .cs-button {
+    color: var(--custom-btn-bg-color);
+  }
+  #faq-1720 .cs-faq-item.active .cs-button:before {
+    background-color: var(--custom-btn-bg-color);
+    transform: rotate(315deg);
+  }
+  #faq-1720 .cs-faq-item.active .cs-button:after {
+    background-color: var(--custom-btn-bg-color);
+    transform: rotate(-315deg);
+  }
+  #faq-1720 .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+    opacity: 1;
+  }
+
+  #faq-1720 .cs-button {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 500;
+    /* 16px - 24px top & bottom */
+    /* 16px - 20px left & right */
+    padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 1.25rem);
+    background-color: #f7f7f7;
+    border: none;
+    color: var(--headerColor);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #faq-1720 .cs-button:hover {
+    cursor: pointer;
+  }
+  #faq-1720 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #faq-1720 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1.3125rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #faq-1720 .cs-button-text {
+    width: 80%;
+    display: block;
+  }
+  #faq-1720 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    background-color: #f7f7f7;
+    color: #333333;
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+  #faq-1720 .cs-item-p span {
+    /* 14px - 16px */
     font-weight: 400;
     color: #262626;
-	}
   }
-  /* Inbetween - 600px */
-  @media only screen and (min-width: 37.5rem) {
-	#faq-1720 .cs-button-group {
-	  width: 80%;
-	  max-width: 22.0625rem;
-	  flex-direction: row;
-	  align-items: stretch;
-	  flex: none;
-	}
-	#faq-1720 .cs-content {
-	  width: 100%;
-	}
-	#faq-1720 .cs-picture {
-	  /* 300px - 493px */
-	  min-height: clamp(18.75rem, 30vw, 30.8125rem);
-	  margin: 0;
-	  height: 100%;
-	  flex: none;
-	  order: 3;
-	}
+}
+/* Inbetween - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #faq-1720 .cs-button-group {
+    width: 80%;
+    max-width: 22.0625rem;
+    flex-direction: row;
+    align-items: stretch;
+    flex: none;
   }
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 48rem) {
-	#faq-1720 .cs-flex-group {
-	  display: flex;
-	  flex-direction: row;
-	  flex-wrap: nowrap;
-	  /* 20px - 80px */
-	  column-gap: clamp(1.25rem, 3vw, 5rem);
-	  padding: 2.5rem;
-	}
-	#faq-1720 .cs-button-group {
-	  flex-direction: column;
-	  flex: auto;
-	}
-	#faq-1720 .cs-picture {
-	  max-height: 31.25rem;
-	}
+  #faq-1720 .cs-content {
+    width: 100%;
   }
-
-
-
+  #faq-1720 .cs-picture {
+    /* 300px - 493px */
+    min-height: clamp(18.75rem, 30vw, 30.8125rem);
+    margin: 0;
+    height: 100%;
+    flex: none;
+    order: 3;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 48rem) {
+  #faq-1720 .cs-flex-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* 20px - 80px */
+    column-gap: clamp(1.25rem, 3vw, 5rem);
+    padding: 2.5rem;
+  }
+  #faq-1720 .cs-button-group {
+    flex-direction: column;
+    flex: auto;
+  }
+  #faq-1720 .cs-picture {
+    max-height: 31.25rem;
+  }
+}
 
 /*
 ---------------------------------------------
@@ -1026,9 +1055,8 @@ about us
   margin-bottom: 1.5rem;
 }
 
-
 .about-section-title h2 {
-  color: #53B3CB;
+  color: #53b3cb;
 }
 
 .about-section-title span {
@@ -1114,7 +1142,7 @@ section.about-us ul.nacc li span.title {
 }
 
 section.about-us ul.nacc li span.item-title {
-  color: #EE5007 !important;
+  color: #ee5007 !important;
   font-weight: 600 !important;
 }
 
@@ -1149,19 +1177,18 @@ section.about-us .right-content p {
   margin-bottom: 50px;
 }
 
-
 /*---------------------------------------
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/warehouse.webp');
+  background-image: url("../images/warehouse.webp");
   background-color: #dcdcdc;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .table-responsive {
-	filter: drop-shadow(2px 2px 4px #404040);
+  filter: drop-shadow(2px 2px 4px #404040);
 }
 
 .schedule-table {
@@ -1195,8 +1222,9 @@ section.about-us .right-content p {
   border-color: transparent;
 }
 
-.schedule-table th + td {
-}
+/*.schedule-table th + td {
+   
+} */
 
 .schedule-table thead th:last-child {
   border-right-color: transparent;
@@ -1230,7 +1258,6 @@ section.about-us .right-content p {
   position: relative;
   z-index: 2;
 }
-
 
 /*---------------------------------------
   PRICING              
@@ -1290,14 +1317,12 @@ section.about-us .right-content p {
   color: var(--link-hover-color);
 }
 
-
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
 }
-
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -1325,8 +1350,8 @@ section.about-us .right-content p {
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
+  transform: scale(0.8);
 }
-
 
 /*---------------------------------------
   SITE FOOTER              
@@ -1340,7 +1365,7 @@ section.about-us .right-content p {
 
 .site-footer-top {
   background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
+  background-image: url("../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg");
   background-repeat: no-repeat;
   margin-bottom: 70px;
   padding-top: 30px;
@@ -1353,12 +1378,19 @@ section.about-us .right-content p {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer-link,
 .copyright-text {
   color: var(--white-color);
+}
+.footer-navlink:hover {
+  transform: rotate(5deg);
+}
+.footer-contact-link:hover {
+  transform: translateX(-8px);
+  transition: 0.6s ease-out;
 }
 
 .site-footer-links {
@@ -1374,7 +1406,21 @@ section.about-us .right-content p {
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
+/* on hover, text will bounce infinite times */
+.copyright-text > a:hover {
+  font-weight: bold;
+  animation: bounce 0.5s infinite ease-in-out;
+}
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1413,18 +1459,482 @@ section.about-us .right-content p {
   display: block;
 }
 
-.social-icon-link span:hover::before{
+.social-icon-link span:hover::before {
   animation: spinAround 2s linear infinite;
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
 }
+
+/*---------------------------------------
+  PROFESSIONAL UI/UX ENHANCEMENTS
+-----------------------------------------*/
+
+/*---------------------------------------
+  SECTION IMPROVEMENTS
+-----------------------------------------*/
+.university-section {
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.university-section .container {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: var(--border-radius-medium);
+  padding: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.university-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.university-header h2 {
+  color: var(--dark-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 10px;
+}
+
+.university-header p {
+  font-size: var(--h5-font-size);
+  color: var(--p-color);
+  margin-bottom: 30px;
+}
+
+
+#university-map-container {
+  padding: 40px 20px;
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-medium);
+  margin: 60px auto 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 90%;
+}
+
+#university-map-container h3 {
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  text-align: center;
+}
+
+.university-map {
+  border-radius: var(--border-radius-medium);
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: clamp(300px, 50vw, 450px);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #university-map-container {
+      padding: 20px 10px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #university-map-container {
+      padding: 15px 5px;
+      margin-top: 30px;
+  }
+}
+
+
+/*---------------------------------------
+  PRICING SERVICES DESIGN (Refined)
+-----------------------------------------*/
+.services-section {
+  background-color: var(--section-bg-color);
+  padding: 100px 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-item {
+  background: #ffffff;
+  border-radius: var(--border-radius-medium);
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.service-item h4 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--secondary-color); /* Changed to orange to match theme */
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.service-item .price-tag {
+  font-size: 24px;
+  color: var(--custom-btn-bg-color);
+  font-weight: var(--font-weight-bold);
+  margin: 20px 0;
+}
+
+.service-item p {
+  color: var(--p-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .services-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/*---------------------------------------
+  Custom Navbar Styling (Fixed)
+-----------------------------------------*/
+.dark-nav {
+  background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-section-title h2 {
+  color: var(--primary-color);  /* This makes the search title yellow */
+}
+
+
+.dark-nav .navbar-nav .nav-link {
+  color: var(--white-color);
+  padding: 15px 20px;
+}
+
+.dark-nav .navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.dark-nav .navbar-toggler {
+  border-color: var(--white-color);
+}
+
+.dark-nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.services-section {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.about-section-title h2 {
+  color: var(--dark-color);  /* Changes search title to black */
+}
+
+
+
+/*---------------------------------------
+  BACK BUTTON STYLING (Fixed)
+-----------------------------------------*/
+.back-btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius-large);
+    padding: 12px 30px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: var(--custom-btn-bg-hover-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
+/*---------------------------------------
+  RESPONSIVE DESIGN
+-----------------------------------------*/
+
+
+@media (max-width: 768px) {
+  .services-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-item {
+      width: 90%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .services-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*---------------------------------------
+LOCATIONS PAGE STYLES              
+-----------------------------------------*/
+
+/* Locations Section Styling */
+/* Locations Section Styling */
+.locations-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+              url('../images/university-bg.jpg') center/cover;
+  padding: 80px 0;
+  margin: 40px 0;
+  border-top: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.locations-section h2 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.locations-section .search-instruction {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+.finder-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.finder-container:hover {
+  transform: translateY(-5px);
+}
+
+.finder-container .custom-btn.main {
+  min-width: 250px;
+  font-size: 1.3rem;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.finder-container .custom-btn.main:hover {
+  transform: scale(1.05);
+}
+
+.finder-container p {
+  color: var(--p-color);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+
+.search-instruction {
+  margin-bottom: 30px;
+}
+
+.search-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#search-bar {
+  margin-bottom: 20px;
+}
+
+.search-btn {
+  margin-top: 30px;
+}
+
+
+
+
+.dropdown-menu {
+  width: 100%;
+  background: white;
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: var(--section-bg-color);
+}
+
+
+.search-btn {
+  padding: 15px 60px;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+#search-bar {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: var(--border-radius-medium);
+  border: 2px solid var(--secondary-color);
+  text-align: center;
+}
+
+.search-instruction {
+  margin-bottom: 40px;
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+}
+
+/* Add this for the separator */
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--secondary-color);
+  margin: 80px 0;
+  opacity: 0.3;
+}
+
+
+/* University List */
+.university-list {
+    margin-top: 60px;  /* Added top margin */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto 0;  /* Maintains center alignment with top spacing */
+    padding: 20px;
+}
+
+.university-card {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.university-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.university-card h3 {
+  color: var(--secondary-color);
+  font-size: var(--h4-font-size);
+  margin-bottom: 15px;
+}
+
+.university-card p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+}
+
+/* Google Map */
+#google-map {
+  width: 100%;
+  height: 450px;
+  border-radius: var(--border-radius-medium);
+  margin-top: 30px;
+}
+
+/*---------------------------------------
+ANIMATIONS               
+-----------------------------------------*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
 
 
 /*---------------------------------------
@@ -1464,7 +1974,7 @@ section.about-us .right-content p {
     padding-top: 25px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--dark-color);
   }
@@ -1493,7 +2003,7 @@ section.about-us .right-content p {
     padding: 20px;
   }
 
-  .schedule-table tr, 
+  .schedule-table tr,
   .schedule-table td {
     padding: 25px;
   }
@@ -1535,4 +2045,20 @@ section.about-us .right-content p {
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  .search-instruction {
+      margin-bottom: 30px;
+  }
+  
+  .search-container {
+      margin-bottom: 40px;
+  }
+  
+  .university-list {
+      margin-top: 40px;
+  }
+}
 
+/*---------------------------------------
+  LOGIN PAGE           
+-----------------------------------------*/
