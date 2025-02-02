@@ -1587,3 +1587,18 @@ section.about-us .right-content p {
 .input-error {
   border: 2px solid var(--primary-color);
 }
+
+/* home page scroll animation */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+#section_2 {
+  height: 90vh;
+  align-content: center;
+}
+.scroll-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
