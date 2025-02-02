@@ -330,8 +330,8 @@ strong {
 .custom-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
-  transform: scale(0.8);
-  transition: 0.7s ease-in;
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
 }
 /* lets begin button, on hover arrow animation */
 
@@ -341,7 +341,7 @@ strong {
 
 .custom-btn .arrow {
   position: absolute;
-  right: -6px; /* Start off-screen */
+  right: 3px;
   opacity: 0;
   font-size: 33px;
   font-weight: bolder;
@@ -354,7 +354,7 @@ strong {
 }
 
 .custom-btn:hover .arrow {
-  right: 30px;
+  left: 63%;
   opacity: 1;
   animation: bounceArrow 0.5s infinite alternate;
 }
@@ -364,7 +364,7 @@ strong {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(5px);
+    transform: translateX(-5px);
   }
 }
 
@@ -1350,7 +1350,9 @@ section.about-us .right-content p {
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
-  transform: scale(0.8);
+  /* submit btn hover animation */
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
 }
 
 /*---------------------------------------
@@ -2062,3 +2064,22 @@ ANIMATIONS
 /*---------------------------------------
   LOGIN PAGE           
 -----------------------------------------*/
+
+.input-error {
+  border: 2px solid var(--primary-color);
+}
+
+/* home page scroll animation */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+#section_2 {
+  height: 90vh;
+  align-content: center;
+}
+.scroll-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
