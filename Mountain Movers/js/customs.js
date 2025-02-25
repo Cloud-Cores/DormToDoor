@@ -108,23 +108,41 @@
 	  }
 	})();
 
+	$(document).ready(function() {
+  console.log("Custom tabs script loaded.");
+  // Log how many tab elements are found
+  console.log("Tabs found:", $(".naccs .menu div").length);
+  
+  $(".naccs .menu div").on("click", function() {
+    console.log("Tab clicked:", $(this).text());
+    var $clickedTab = $(this);
+    
+    if (!$clickedTab.hasClass("active")) {
+      // Remove active class from all tabs and panels
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul.nacc li").removeClass("active");
+      
+      // Set active class on clicked tab
+      $clickedTab.addClass("active");
+      
+      // Determine index and target panel
+      var tabIndex = $clickedTab.index();
+      console.log("Tab index:", tabIndex);
+      var $targetPanel = $(".naccs ul.nacc li").eq(tabIndex);
+      $targetPanel.addClass("active");
+      
+      // Animate container height to match the active panel's height
+      var newHeight = $targetPanel.outerHeight();
+      console.log("New panel height:", newHeight);
+      $(".naccs ul.nacc").animate({ height: newHeight }, 300);
+    }
+  });
+});
 
-	$(document).on("click", ".naccs .menu div", function() {
-		var numberIndex = $(this).index();
+	  
+
+
 	
-		if (!$(this).is("active")) {
-			$(".naccs .menu div").removeClass("active");
-			$(".naccs ul li").removeClass("active");
-	
-			$(this).addClass("active");
-			$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-	
-			var listItemHeight = $(".naccs ul")
-				.find("li:eq(" + numberIndex + ")")
-				.innerHeight();
-			$(".naccs ul").height(listItemHeight + "px");
-		}
-	});
 
 	$('.owl-testimonials').owlCarousel({
 		items:1,

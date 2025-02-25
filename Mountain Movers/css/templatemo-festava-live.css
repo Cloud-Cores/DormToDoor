@@ -1034,23 +1034,20 @@ strong {
 about us
 ---------------------------------------------
 */
+/* About Us Section */
+section.about-us {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 .about-section-title {
   margin-top: 4rem;
   text-align: center;
-  justify-items: center;
 }
 
 .about-section-main {
   margin-top: 2.5rem;
   text-align: center;
-  justify-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.pricing-section-main {
-  margin-top: 1rem;
-  text-align: center;
-  justify-items: center;
   margin-bottom: 1.5rem;
 }
 
@@ -1062,6 +1059,7 @@ about us
   color: #c7460a;
 }
 
+/* Content Styling */
 .about-body {
   text-align: start;
 }
@@ -1071,86 +1069,27 @@ about us
   font-weight: 500;
 }
 
-section.about-us {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
+/* Tabs Navigation */
 section.about-us .naccs {
   position: relative;
 }
 
-section.about-us .naccs .menu div {
-  padding: 15px 30px;
-  display: inline-block;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px !important;
-  margin-right: 30px;
-  font-size: 18px;
-  color: #212741;
-  background-color: #fff;
-  cursor: pointer;
-  vertical-align: middle;
-  font-weight: 600;
-  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-section.about-us .naccs .menu div.active {
-  color: #ff511a;
-}
-
 section.about-us ul.nacc {
-  margin-top: 50px !important;
+  margin-top: 50px;
   position: relative;
   min-height: 100%;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
+/* List Items */
 section.about-us ul.nacc li {
   background-color: #fff;
   overflow: hidden;
   opacity: 0;
   transform: translateX(50px);
   position: absolute;
-  list-style: none;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-section.about-us ul.nacc li .main-list,
-section.about-us ul.nacc li .list-item {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-}
-
-section.about-us ul.nacc li .last-item {
-  margin-bottom: 0px;
-}
-
-section.about-us ul.nacc li span.title {
-  font-size: 18px;
-  color: #212741;
-  font-weight: 600;
-  display: inline-block;
-  width: 24%;
-}
-
-section.about-us ul.nacc li span.item-title {
-  color: #ee5007 !important;
-  font-weight: 600 !important;
-}
-
-section.about-us ul.nacc li span.item {
-  font-size: 18px;
-  color: #212741;
-  font-weight: 400;
-  display: inline-block;
-  width: 24%;
 }
 
 section.about-us ul.nacc li.active {
@@ -1161,6 +1100,29 @@ section.about-us ul.nacc li.active {
   transform: translateX(0px);
 }
 
+/* Content Layout */
+section.about-us ul.nacc li span.title {
+  font-size: 18px;
+  color: #212741;
+  font-weight: 600;
+  display: inline-block;
+  width: 24%;
+}
+
+section.about-us ul.nacc li span.item {
+  font-size: 18px;
+  color: #212741;
+  font-weight: 400;
+  display: inline-block;
+  width: 24%;
+}
+
+section.about-us ul.nacc li span.item-title {
+  color: #ee5007;
+  font-weight: 600;
+}
+
+/* Right Content */
 section.about-us .right-content {
   margin-left: 60px;
 }
@@ -2179,4 +2141,113 @@ find university and about-section scroll view,
   transform: scale(0.8);
 }
 
-/* scroll animation end here */
+/* Pricing Table Styling */
+section.about-us ul.nacc li .main-list {
+  display: flex;
+  background: #fff;
+  padding: 25px 20px;
+  border-bottom: 2px solid #ee5007;
+  margin-bottom: 0;
+}
+
+section.about-us ul.nacc li .list-item {
+  display: flex;
+  background: #fff;
+  padding: 25px 20px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+section.about-us ul.nacc li .list-item:hover {
+  background: #fafafa;
+}
+
+section.about-us ul.nacc li span.title {
+  font-size: 18px;
+  color: #212741;
+  font-weight: 600;
+  width: 24%;
+}
+
+section.about-us ul.nacc li span.item-title {
+  color: #ee5007;
+  font-weight: 700;
+}
+
+section.about-us ul.nacc li span.item {
+  font-size: 18px;
+  color: #212741;
+  width: 24%;
+}
+
+
+/* Main Pricing Container */
+section.about-us .pricing-section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu Container */
+section.about-us .naccs .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* Individual Tab Styling */
+section.about-us .naccs .menu div {
+  padding: 15px 25px;
+  min-width: 160px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212741;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  white-space: nowrap;
+}
+
+section.about-us .naccs .menu div:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+section.about-us .naccs .menu div.active {
+  color: #ff511a;
+  border: 2px solid #ff511a;
+  transform: translateY(-3px);
+}
+
+/* Title Styling */
+.section-title h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  section.about-us ul.nacc li span.title,
+  section.about-us ul.nacc li span.item {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  
+  section.about-us ul.nacc li .main-list,
+  section.about-us ul.nacc li .list-item {
+    display: block;
+  }
+}
+
