@@ -564,7 +564,26 @@ strong {
   background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
-  position: inherit;
+}
+
+#section_2::before,
+#section_2::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  pointer-events: none;
+  width: var(--logo-width);
+  z-index: 2;
+}
+
+#section_2::before {
+  background: linear-gradient(to right, #000000 0%, transparent 100%);
+  left: 0;
+}
+
+#section_2::after {
+  background: linear-gradient(to left, #000000 0%, transparent 100%);
+  right: 0;
 }
 
 .about-image {
@@ -1114,12 +1133,24 @@ section.about-us ul.nacc li span.title {
   width: 24%;
 }
 
+section.about-us ul.nacc li span.title-button {
+  display: inline-block;
+  width: 14%;
+}
+
 section.about-us ul.nacc li span.item {
   font-size: 18px;
   color: #212741;
   font-weight: 400;
   display: inline-block;
+  padding-right: 20px;
   width: 24%;
+}
+
+section.about-us ul.nacc li span.item-button {
+  display: inline-block;
+  width: 14%;
+  align-items: center;
 }
 
 section.about-us ul.nacc li span.item-title {
@@ -1995,7 +2026,7 @@ CLIENTS SLIDER
   height: 100%;
   pointer-events: none;
   width: var(--logo-width);
-  z-index: 1;
+  z-index: 2;
 }
 
 .slider::before {
