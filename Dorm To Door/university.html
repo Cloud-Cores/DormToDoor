@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Door to Dorm, LLC</title>
+    <link rel="icon" sizes="40x40" href="images/Dorm to Door/head.png">
+
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+</head>
+
+<body>
+
+    <main>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Fall Discount - get up to 10% off now!</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg dark-nav">
+        
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Dorm to Door/logothin.png" width="175" class="about-image img-fluid">
+
+                </a>
+
+                <a href="book.html" class="btn custom-btn d-lg-none ms-auto me-4">Book Now!</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="more.html">Learn More</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Why Us?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="locations.html">Locations</a>
+                            </li>
+                        </ul>  
+                        
+
+                    <a href="book.html" class="btn custom-btn d-lg-block d-none">Book Now!</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="container mt-5">
+            <button class="back-btn" onclick="window.location.href='locations.html'">
+                ← Back to Locations
+            </button>
+        </div>
+       
+        <section class="services-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 id="universityName" class="text-black mb-4">University Services</h2>
+                    <p id="universityLocation" class="text-muted mb-5">Available Services and Pricing</p>
+                </div>
+        
+                <div id="servicesList" class="services-list">
+                    <!-- Summer Storage Section -->
+                    <div class="summer-storage-item">
+                        <h4>Summer Storage</h4>
+                        <div class="price-grid">
+                            <div class="price-circle">
+                                <div class="price-tag">$175</div>
+                                <p class="people">1 person</p>
+                            </div>
+                            <div class="price-circle">
+                                <div class="price-tag">$165</div>
+                                <p class="people">2 people</p>
+                            </div>
+                            <div class="price-circle">
+                                <div class="price-tag">$150</div>
+                                <p class="people">4 people</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <p>Secure storage for your belongings during summer break. Includes pickup, storage, and delivery. <em>*Valid for 4 months.</em></p>
+                    </div>
+        
+                    <!-- Moving Services and Greek Life Section -->
+                    <div class="service-group">
+                        <div class="service-item">
+                            <h4>Moving Services</h4>
+                            <div class="price-tag">$175 (On Campus)</div>
+                            <div class="price-tag">$200 (Off Campus)</div>
+                            <p>Professional moving service between dorms, off-campus housing, or to an off-campus storage facility. <em>*Storage not included.</em></p>
+                        </div>
+        
+                        <div class="service-item">
+                            <h4>Greek Life Group Storage</h4>
+                            <div class="price-tag">Budget-Based - Contact Us!</div>
+                            <p>Special group rates for fraternity and sorority house moves. <strong>Contact us for custom pricing details.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+            <!-- University Location Map -->
+<div class="col-12 mt-5" id="university-map-container">
+    <h3 class="text-black text-center">Campus Location</h3>
+    <iframe
+        id="university-map"
+        class="university-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386733.08178347856!2d-75.71227093169082!3d40.77627056221918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c44309dd8fe67b%3A0xf818dfe873cc291!2sLehigh%20Valley!5e0!3m2!1sen!2sus!4v1616192712345"
+        width="100%" height="450" allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+
+        
+    
+
+
+  
+
+
+<footer class="site-footer">
+    <div class="site-footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                    <a href="index.html">
+                        <img src="images/Dorm to Door/logothin.png" width="175" class="about-image img-fluid">
+    
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                    <ul class="social-icon d-flex justify-content-lg-end">
+                        <!--
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-twitter"></span>
+                            </a>
+                        </li>
+                    -->
+
+                        <li class="social-icon-item">
+                            <a href="https://www.linkedin.com/company/mountain-movers-storage-and-co/" target="_blank" class="social-icon-link" data-bs-toggle="tooltip" title="LinkedIn">
+                                <span class="bi-linkedin"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="https://www.instagram.com/themountainmovers.co/" target="_blank" class="social-icon-link" data-bs-toggle="tooltip" title="instagram">
+                                <span class="bi-instagram"></span>
+                            </a>
+                        </li>
+
+                        <!--
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-youtube"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <span class="bi-pinterest"></span>
+                            </a>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-12 mb-4 pb-2">
+                <h5 class="site-footer-title mb-3">Links</h5>
+
+                <ul class="site-footer-links">
+                    <li class="site-footer-link-item">
+                        <a href="index.html" class="site-footer-link footer-navlink">Home</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="about.html" class="site-footer-link footer-navlink">About Us</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="more.html" class="site-footer-link footer-navlink">Learn More</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="more.html#faq-1720" class="site-footer-link footer-navlink">FAQs</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="book.html" class="site-footer-link footer-navlink">Book Now</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                <p class="text-white d-flex mb-1">
+                    <a href="tel: 516-724-3600" class="site-footer-link footer-contact-link">
+                        (516) 724-3600
+                    </a>
+                </p>
+
+                <p class="text-white d-flex">
+                    <a href="mailto:service@mountmoversstorage.com" class="site-footer-link footer-contact-link">
+                        skyler@doortodormmovers.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                <h5 class="site-footer-title mb-3">Location</h5>
+
+                <p class="text-white d-flex mt-3 mb-2">
+                    Lehigh University, Bethlehem, PA</p>
+
+                <a class="link-fx-1 color-contrast-higher mt-3" href="#section_6">
+                    <span>Our Maps</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="16" cy="16" r="15.5"></circle>
+                            <line x1="10" y1="18" x2="16" y2="12"></line>
+                            <line x1="16" y1="12" x2="22" y2="18"></line>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer-bottom">
+        <div class="container">
+            <div class="row">
+
+                <div class="mt-5">
+                    <p class="copyright-text">Copyright © Dorm To Door</p>
+                    <p class="copyright-text">Created by: <a href="https://cloudcores.org">CloudCores</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/locations.js"></script>
+    <script src="js/university.js"></script>
+
+
+</body>
+
+</html>
