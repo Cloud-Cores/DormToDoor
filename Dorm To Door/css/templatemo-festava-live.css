@@ -1,20 +1,19 @@
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
   --primary-color: #60777f;
-  --secondary-color: #BCB09D;
+  --secondary-color: #bcb09d;
   --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #60777F;
+  --custom-btn-bg-color: #60777f;
   --custom-btn-bg-hover-color: #4b5e64;
   --light-color: #d7d7d7ea;
   --dark-color: #000000;
   --headerColor: #1a1a1a;
   --p-color: #717275;
   --border-color: #7fffd4;
-  --link-hover-color: #BCB09D;
+  --link-hover-color: #bcb09d;
   --bodyTextColor: #4e4b66;
 
   --body-font-family: "Outfit", sans-serif;
@@ -565,10 +564,12 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-#section_2::before,
-#section_2::after {
-  content: '';
+.about-section-d {
+  position: relative;
+}
+.about-section-d::before,
+.about-section-d::after {
+  content: "";
   position: absolute;
   height: 100%;
   pointer-events: none;
@@ -576,14 +577,15 @@ strong {
   z-index: 2;
 }
 
-#section_2::before {
+.about-section-d::before {
   background: linear-gradient(to right, #000000 0%, transparent 100%);
   left: 0;
 }
 
-#section_2::after {
+.about-section-d::after {
   background: linear-gradient(to left, #000000 0%, transparent 100%);
   right: 0;
+  bottom: 0;
 }
 
 .about-image {
@@ -686,7 +688,7 @@ strong {
 
 .artists-hover {
   background-color: var(--primary-color);
-  background-color: #BCB09D;
+  background-color: #bcb09d;
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
@@ -1085,7 +1087,6 @@ section.about-us {
   text-align: start;
   justify-content: center;
   align-items: center;
-  ;
 }
 
 .about-body p {
@@ -1154,7 +1155,7 @@ section.about-us ul.nacc li span.item-button {
 }
 
 section.about-us ul.nacc li span.item-title {
-  color: #BCB09D;
+  color: #bcb09d;
   font-weight: 600;
 }
 
@@ -1561,154 +1562,154 @@ section.about-us .right-content p {
 /*---------------------------------------
   PRICING SERVICES DESIGN (Refined)
 -----------------------------------------*/
-   /* General Section Styling */
-   .services-section {
-    background-color: #fff;
-    padding: 60px 20px;
-    color: #000;
-    text-align: center;
+/* General Section Styling */
+.services-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  color: #000;
+  text-align: center;
 }
 
 .section-header h2 {
-    color: #000;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .section-header p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 
 /* Summer Storage Styling */
 .summer-storage-item {
-    background: #fff7f0;
-    border: 3px solid var(--secondary-color);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto 40px;
+  background: #fff7f0;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto 40px;
 }
 
 .summer-storage-item h4 {
-    color: var(--primary-color);
-    font-size: 2.4rem;
-    font-weight: bold;
-    margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .price-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .price-card {
-    background: #fff;
-    padding: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
 }
 
 .price-tag {
-    font-size: 1.6rem;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .price-card p {
-    font-size: 1rem;
-    color: var(--bodyTextColor);
+  font-size: 1rem;
+  color: var(--bodyTextColor);
 }
-  /* Summer Storage Styling */
-  .summer-storage-item {
-    background: #fff7f0;
-    border: 3px solid var(--secondary-color);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto 40px;
+/* Summer Storage Styling */
+.summer-storage-item {
+  background: #fff7f0;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto 40px;
 }
 
 .summer-storage-item h4 {
-    color: var(--primary-color);
-    font-size: 2.4rem;
-    font-weight: bold;
-    margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .price-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .people {
-  color: black
+  color: black;
 }
 
 .price-tag {
-    font-size: 1.8rem;
-    font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .price-circle p {
-    font-size: 1rem;
-    margin: 5px 0 0;
+  font-size: 1rem;
+  margin: 5px 0 0;
 }
 
 /* Moving Services and Greek Life Section */
 .service-group {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service-item {
-    background: #ffffff;
-    border: 2px solid var(--secondary-color);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    flex: 1;
-    text-align: center;
+  background: #ffffff;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  flex: 1;
+  text-align: center;
 }
 
 .service-item h4 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .service-item p {
-    color: #444;
-    font-size: 1rem;
-    line-height: 1.6;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .price-grid,
-    .service-group {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .price-grid,
+  .service-group {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /*---------------------------------------
@@ -1746,7 +1747,6 @@ section.about-us .right-content p {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
 .about-section-title h2 {
   color: var(--dark-color); /* Changes search title to black */
 }
@@ -1781,7 +1781,6 @@ section.about-us .right-content p {
   RESPONSIVE DESIGN
 -----------------------------------------*/
 
-
 /*---------------------------------------
 LOCATIONS PAGE STYLES              
 -----------------------------------------*/
@@ -1789,6 +1788,10 @@ LOCATIONS PAGE STYLES
 /* Locations Section Styling */
 /* Locations Section Styling */
 .locations-section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
@@ -2000,7 +2003,6 @@ CLIENTS SLIDER
   width: var(--total-logo-width);
   padding: 0 2rem;
 
-  
   animation: var(--animation-duration) scroll infinite linear;
 }
 
@@ -2021,7 +2023,7 @@ CLIENTS SLIDER
 
 .slider::before,
 .slider::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   pointer-events: none;
@@ -2038,8 +2040,6 @@ CLIENTS SLIDER
   background: linear-gradient(to left, #f8f9fa 0%, transparent 100%);
   right: 0;
 }
-
-
 
 ul.brands li.brand-logo {
   width: var(--logo-width);
@@ -2145,7 +2145,6 @@ ANIMATIONS
   .about-padding {
     padding-top: 25px;
     padding-bottom: 50px;
-    
   }
 
   .navbar {
@@ -2352,7 +2351,6 @@ section.about-us ul.nacc li span.item {
   width: 24%;
 }
 
-
 /* Main Pricing Container */
 section.about-us .pricing-section-main {
   display: flex;
@@ -2415,10 +2413,9 @@ section.about-us .naccs .menu div.active {
     flex: 1 1 100%;
     margin-bottom: 10px;
   }
-  
+
   section.about-us ul.nacc li .main-list,
   section.about-us ul.nacc li .list-item {
     display: block;
   }
 }
-
