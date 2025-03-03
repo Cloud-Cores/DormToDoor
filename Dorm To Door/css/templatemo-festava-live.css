@@ -1069,7 +1069,6 @@ about us
 */
 /* About Us Section */
 section.about-us {
-  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -1092,7 +1091,7 @@ section.about-us {
 }
 
 .about-section-title span {
-  color: #c7460a;
+  color: var(--primary-color);
 }
 
 /* Content Styling */
@@ -1801,7 +1800,6 @@ LOCATIONS PAGE STYLES
 /* Locations Section Styling */
 /* Locations Section Styling */
 .locations-section {
-  height: 80vh;
   display: flex;
   align-items: center;
 
