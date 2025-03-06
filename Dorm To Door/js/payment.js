@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const options = document.querySelectorAll("input[name='TicketForm']");
+    const radio = document.querySelectorAll("input[type='radio']");
     const submitButton = document.querySelector(".form-control[type='submit']");
     const link = document.querySelector("form");
     const price = document.querySelector("h6");
@@ -19,10 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to update the button link
     function updateLink() {
         const selectedOption = document.querySelector("input[name='TicketForm']:checked");
+        const selectedRadio = document.querySelector("input[type='radio']:checked");
         text.innerHTML = "";
         if(selectedOption.id === "flexRadioDefault1"){
             number.required = true;
             number.disabled = false;
+            number.value = 1;
+            selectedRadio.style.border = "1px solid #ced4da";
             if(number.value == 1){
                 price.innerHTML = "Price: $175/month";
 

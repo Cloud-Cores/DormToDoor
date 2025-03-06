@@ -669,7 +669,19 @@ strong {
   position: relative;
   min-height: 54px;
   padding-left: 35px;
+  overflow: hidden;
+  
 }
+
+.ticket-form .form-check:hover {
+  color: #000;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
 
 .ticket-form .form-check .form-check-label {
   display: block;
@@ -678,7 +690,7 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 12px;
-  margin-left: 35px;
+  margin-left: 10px;
   width: 100%;
   height: 100%;
   align-self: center;
