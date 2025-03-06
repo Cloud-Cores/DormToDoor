@@ -107,8 +107,8 @@ https://templatemo.com/tm-583-festava-live
                 <div class="row">
 
                     <div class="col-lg-6 col-10 mx-auto">
-                        <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                            <h2 class="text-center mb-4">Get started here</h2>
+                        <form class="custom-form ticket-form mb-5 mb-lg-0">
+                            <h2 class="text-center mb-4">Sign Up here</h2>
 
                             <!--
                             <div class="ticket-form-body">
@@ -131,7 +131,7 @@ https://templatemo.com/tm-583-festava-live
                             -->
                                 
                                 <div class="price">
-                                    <h6>Price: $100</h6>
+                                    <h6>Price:</h6>
                                 </div>
                                 <div class="price">
                                     <h6>Choose Your Plan</h6>
@@ -177,15 +177,17 @@ https://templatemo.com/tm-583-festava-live
                                     </div>
                                 </div>
                                 
-
+                                <p id="text"></p>
                                 <input type="number" name="ticket-form-number" id="ticket-form-number"
-                                    class="form-control" placeholder="Number of People" required>
+                                    class="form-control" placeholder="Number of People" required min="1" max="4">
 
                                 <!--
                                 <textarea name="ticket-form-message" rows="3" class="form-control"
                                     id="ticket-form-message" placeholder="Additional Request(s)"></textarea>
                             -->
+                                <p class="text-center"> </p>
                                 <div class="col-lg-6  mx-auto">
+                                    
                                     <button type="submit" class="form-control">Continue to Payment</button>
                                 </div>
                             </div>
@@ -335,6 +337,7 @@ https://templatemo.com/tm-583-festava-live
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/payment.js"></script>
 
 </body>
 
