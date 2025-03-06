@@ -435,6 +435,11 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+.navbar-brand img {
+  width: auto;
+  height: 10vh;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: var(--border-radius-large);
   margin: 10px;
@@ -656,13 +661,13 @@ strong {
 .ticket-form {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
-  padding: 50px;
+  padding: 70px;
   z-index: 4;
 }
 
 .ticket-form .form-check {
   position: relative;
-  min-height: 52px;
+  min-height: 70px;
   padding-left: 35px;
 }
 
@@ -676,6 +681,7 @@ strong {
   margin-left: 35px;
   width: 100%;
   height: 100%;
+  align-self: center;
 }
 
 /*---------------------------------------
@@ -1220,6 +1226,10 @@ section.about-us .right-content p {
 .schedule-table td {
   border-color: #363a3e;
   padding: 30px;
+}
+
+.schedule-table td {
+  width: 50%;
 }
 
 .schedule-table tr:last-child th,
@@ -2196,7 +2206,7 @@ ANIMATIONS
   }
 
   .ticket-form {
-    padding: 30px;
+    padding: 50px;
   }
 }
 
