@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define payment links for each option
   const paymentLinks = {
-    flexRadioDefault1: "https://buy.stripe.com/test_00gg0Pdvt5hde40eUY",
-    flexRadioDefault2: "https://book.stripe.com/test_fZeg0P9fdcJFf84aEF",
-    flexRadioDefault3: "https://book.stripe.com/test_cN2eWL3UTcJFf84288",
+    flexRadioDefault1: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736907/test",
+    flexRadioDefault2: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736905/test",
+    flexRadioDefault3: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736904/test",
     flexRadioDefault4: "https://book.stripe.com/test_aEUcODcrp7pl2li4gl",
     flexRadio2person: "https://buy.stripe.com/test_3csaGv3UTbFB3pm6or",
     flexRadio4person: "https://buy.stripe.com/test_5kAcODezxgZVgc8002",
@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
         price.innerHTML = "Price: $330/month";
         submitButton.onclick = function () {
           window.location.href =
-            "https://buy.stripe.com/test_3csaGv3UTbFB3pm6or";
-          link.action = "https://buy.stripe.com/test_3csaGv3UTbFB3pm6or";
+            "https://app-na2.hubspot.com/payment-links/242185528/preview/215736914/test";
+          link.action = "https://app-na2.hubspot.com/payment-links/242185528/preview/215736914/test";
         };
       }
       if (number.value == 3) {
@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
         price.innerHTML = "Price: $600/month";
         submitButton.onclick = function () {
           window.location.href =
-            "https://buy.stripe.com/test_5kAcODezxgZVgc8002";
-          link.action = "https://buy.stripe.com/test_5kAcODezxgZVgc8002";
+            "https://app-na2.hubspot.com/payment-links/242185528/preview/215736924/test";
+          link.action = "https://app-na2.hubspot.com/payment-links/242185528/preview/215736924/test";
         };
       }
       submitButton.innerHTML = "Continue to Payment";
