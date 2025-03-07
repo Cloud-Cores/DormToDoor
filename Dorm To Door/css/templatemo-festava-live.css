@@ -680,9 +680,11 @@ input[type="radio"] {
   display: none;
 }
 
-#flexRadioDefault2 + label,
-#flexRadioDefault3 + label {
-  margin-top: 4.1%;
+@media only screen and (max-width: 1300px) {
+  #flexRadioDefault2 + label,
+  #flexRadioDefault3 + label {
+    margin-top: 4.1%;
+  }
 }
 
 .ticket-form .form-check .form-check-label {
