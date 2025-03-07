@@ -649,7 +649,7 @@ strong {
   background-size: cover;
   position: relative;
   padding-top: 130px;
-  backdrop-filter: blur(5px) ;
+  backdrop-filter: blur(5px);
   z-index: 1;
 }
 
@@ -670,7 +670,6 @@ strong {
   min-height: 54px;
   padding-left: 35px;
   overflow: hidden;
-  
 }
 
 .ticket-form .form-check:hover {
@@ -681,7 +680,10 @@ input[type="radio"] {
   display: none;
 }
 
-
+#flexRadioDefault2 + label,
+#flexRadioDefault3 + label {
+  margin-top: 4.1%;
+}
 
 .ticket-form .form-check .form-check-label {
   display: block;
