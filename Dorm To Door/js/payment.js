@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (selectedOption.id === "flexRadioDefault1") {
       number.required = true;
       number.disabled = false;
-      number.value = 1;
+      
 
       selectedRadio.style.border = "2px solid rgb(15, 13, 13)";
 
@@ -58,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         text.innerHTML = "Please select 1, 2, or 4 people.";
         text.style.color = "red";
         price.innerHTML = "Price: ";
+        submitButton.onclick = function () {
+          window.location.href = "";
+          link.action = "";
+        };
       }
 
       if (number.value == 4) {
