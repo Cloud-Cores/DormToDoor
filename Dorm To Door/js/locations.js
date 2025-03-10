@@ -1,10 +1,20 @@
 const universities = [
     { name: "Lehigh University", id: "Lehigh" },
-    { name: "Penn State University", id: "PennState" },
-    { name: "Temple University", id: "Temple" },
-    { name: "Rutgers University", id: "Rutgers" },
-    { name: "Drexel University", id: "Drexel" },
+    { name: "University of Southern Carolina", id: "UoSC" },
+    { name: "Perkiomen", id: "Perkiomen" },
+    { name: "UC Schools", id: "UCs" },
+    { name: "Duquesne University", id: "Duquesne" },
+    { name: "Clark University", id: "Clark" },
+    { name: "American Uniersity", id: "American" },
+    { name: "Colby", id: "Colby" },
+    { name: "Hill School", id: "Hill" },
+    { name: "West Chester", id: "WC" },
+    { name: "St. Josephs", id: "StJoes" },
+    { name: "Desales", id: "Desales" },
+    { name: "Moravian", id: "Moravian" },
+    { name: "Muhlenburg", id: "Muhlenburg" },
     { name: "University of Pennsylvania", id: "UPenn" },
+    { name: "College of the Holy Cross", id: "Holy" },
     { name: "Lafayette College", id: "Lafayette" }
 ];
 
