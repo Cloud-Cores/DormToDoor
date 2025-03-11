@@ -1,4 +1,6 @@
-var sectionArray = [1, 2, 3, 7, 6];
+// var sectionArray = [1, 2, 3, 7, 6];
+
+var sectionArray = [1, 7, 2, 3, 6];
 
 $.each(sectionArray, function (index, value) {
   $(document).scroll(function () {
