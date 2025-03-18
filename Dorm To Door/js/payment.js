@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define payment links for each option
   const paymentLinks = {
-    flexRadioDefault1: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736907/test",
-    flexRadioDefault2: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736905/test",
-    flexRadioDefault3: "https://app-na2.hubspot.com/payment-links/242185528/preview/215736904/test",
+    flexRadioDefault1: "https://app-na2.hubspot.com/payments/ty2Nh6jZW6j4?referrer=PAYMENT_LINK",
+    flexRadioDefault2: "https://app-na2.hubspot.com/payments/GTFP47txyK?referrer=PAYMENT_LINK",
+    flexRadioDefault3: "https://app-na2.hubspot.com/payments/GhNqNqhm7rC?referrer=PAYMENT_LINK",
     flexRadioDefault4: "https://book.stripe.com/test_aEUcODcrp7pl2li4gl",
     flexRadio2person: "https://buy.stripe.com/test_3csaGv3UTbFB3pm6or",
     flexRadio4person: "https://buy.stripe.com/test_5kAcODezxgZVgc8002",
@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (selectedOption.id === "flexRadioDefault1") {
       number.required = true;
       number.disabled = false;
-      
+      if (number.value == null || number.value == 0) {
+        number.value = 1;
+      }
 
       selectedRadio.style.border = "2px solid rgb(15, 13, 13)";
 
@@ -50,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
         price.innerHTML = "Price: $330/month";
         submitButton.onclick = function () {
           window.location.href =
-            "https://app-na2.hubspot.com/payment-links/242185528/preview/215736914/test";
-          link.action = "https://app-na2.hubspot.com/payment-links/242185528/preview/215736914/test";
+            "https://app-na2.hubspot.com/payments/RbyHPvYXZxc9pF?referrer=PAYMENT_LINK";
+          link.action = "https://app-na2.hubspot.com/payments/RbyHPvYXZxc9pF?referrer=PAYMENT_LINK";
         };
       }
       if (number.value == 3) {
@@ -68,8 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
         price.innerHTML = "Price: $600/month";
         submitButton.onclick = function () {
           window.location.href =
-            "https://app-na2.hubspot.com/payment-links/242185528/preview/215736924/test";
-          link.action = "https://app-na2.hubspot.com/payment-links/242185528/preview/215736924/test";
+            "https://app-na2.hubspot.com/payments/9p2CTTr62JWxKqDG?referrer=PAYMENT_LINK";
+          link.action = "https://app-na2.hubspot.com/payments/9p2CTTr62JWxKqDG?referrer=PAYMENT_LINK";
         };
       }
       submitButton.innerHTML = "Continue to Payment";
