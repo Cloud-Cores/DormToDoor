@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "Desales": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.392744157882!2d-75.375703!3d40.540161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4301bfbb8c7b1%3A0x4dcd7d69fa9e1fb1!2sDeSales%20University!5e0!3m2!1sen!2sus",
             "Moravian": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7751904408585!2d-75.381395!3d40.630598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c442a8e6e8cb45%3A0xb74d6f17ff6e7aa3!2sMoravian%20University!5e0!3m2!1sen!2sus",
             "Muhlenburg": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.872778286268!2d-75.502253!3d40.601098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4303bb43adcb9%3A0x227e4a6a6aa4c5b9!2sMuhlenberg%20College!5e0!3m2!1sen!2sus",
-            "College of the Holy Cross": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.7097245450885!2d-71.810936!3d42.238358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4072a41a77f07%3A0xa164d1266f0a5f66!2sCollege%20of%20the%20Holy%20Cross!5e0!3m2!1sen!2sus"
+            "College of the Holy Cross": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.7097245450885!2d-71.810936!3d42.238358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4072a41a77f07%3A0xa164d1266f0a5f66!2sCollege%20of%20the%20Holy%20Cross!5e0!3m2!1sen!2sus",
+            "Cornell University": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.413657646548!2d-76.478238!3d42.447621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0f6e4c2e7e3b9%3A0x7a2f2c3e9b5e0e7e!2sCornell%20University!5e0!3m2!1sen!2sus",
+            "FairField University": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.872778286268!2d-73.261261!3d41.160827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd0b7f2e0e3c6f%3A0x6f3c15470c55675a!2sFairfield%20University!5e0!3m2!1sen!2sus"
         };
 
         if (universityMap[selectedUniversity]) {

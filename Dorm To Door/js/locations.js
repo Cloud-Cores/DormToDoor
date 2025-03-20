@@ -15,12 +15,14 @@ const universities = [
     { name: "Muhlenburg", id: "Muhlenburg" },
     { name: "University of Pennsylvania", id: "UPenn" },
     { name: "College of the Holy Cross", id: "Holy" },
-    { name: "Lafayette College", id: "Lafayette" }
+    { name: "Lafayette College", id: "Lafayette" },
+    { name: "Cornell University", id: "Cornell" },
+    { name: "FairField University", id: "Fairfield" }
 ];
 
 function handleUniversitySelection(university) {
     localStorage.setItem('selectedUniversity', university.name);
-    window.location.href = 'university.html';
+    window.location.href = 'university';
 }
 
 function showSuggestions() {

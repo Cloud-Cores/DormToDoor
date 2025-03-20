@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     flexRadioDefault1: "https://app-na2.hubspot.com/payments/ty2Nh6jZW6j4?referrer=PAYMENT_LINK",
     flexRadioDefault2: "https://app-na2.hubspot.com/payments/GTFP47txyK?referrer=PAYMENT_LINK",
     flexRadioDefault3: "https://app-na2.hubspot.com/payments/GhNqNqhm7rC?referrer=PAYMENT_LINK",
-    flexRadioDefault4: "https://book.stripe.com/test_aEUcODcrp7pl2li4gl",
-    flexRadio2person: "https://buy.stripe.com/test_3csaGv3UTbFB3pm6or",
-    flexRadio4person: "https://buy.stripe.com/test_5kAcODezxgZVgc8002",
+    flexRadioDefault4: "https://meetings-na2.hubspot.com/skyler-mott",
   };
 
   // Function to update the button link
@@ -57,17 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
         };
       }
       if (number.value == 3) {
+        /*
         text.innerHTML = "Please select 1, 2, or 4 people.";
         text.style.color = "red";
-        price.innerHTML = "Price: ";
+        */
+        price.innerHTML = "Price: $465/month";
         submitButton.onclick = function () {
-          window.location.href = "";
-          link.action = "";
+          window.location.href = "https://app-na2.hubspot.com/payments/YkxcQKpzyxKk?referrer=PAYMENT_LINK";
+          link.action = "https://app-na2.hubspot.com/payments/YkxcQKpzyxKk?referrer=PAYMENT_LINK";
         };
       }
 
       if (number.value == 4) {
-        price.innerHTML = "Price: $600/month";
+        price.innerHTML = "Price: $600/month (Best Value!)";
         submitButton.onclick = function () {
           window.location.href =
             "https://app-na2.hubspot.com/payments/9p2CTTr62JWxKqDG?referrer=PAYMENT_LINK";

@@ -2166,8 +2166,18 @@ ul.brands li.brand-logo {
 }
 
 .logos-slide img {
-  max-width: 110px;
+  max-width: 120px;
   margin: 0 40px;
+}
+
+.logo-slide {
+  display: inline-block;
+  animation: 27s slide infinite linear;
+}
+
+.logo-slide img {
+  max-width: 140px;
+  margin: 0 35px;
 }
 
 /*---------------------------------------
