@@ -1109,14 +1109,18 @@ input[type="radio"] {
 
 .how-image {
   max-width: 150px;
-  justify-self: center;
   margin-bottom: 25px;
+}
+
+.how-text {
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 30px;
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 50%;
 }
