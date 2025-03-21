@@ -1100,6 +1100,27 @@ input[type="radio"] {
   }
 }
 
+.howcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.how-image {
+  max-width: 150px;
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 /*
 ---------------------------------------------
 Contest
