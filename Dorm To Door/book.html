@@ -23,7 +23,7 @@
 
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <link href="css/templatemo-festava-live.css?version=2" rel="stylesheet">
 
     <!--
 
@@ -164,7 +164,7 @@ https://templatemo.com/tm-583-festava-live
                                             <input class="form-check-input" type="radio" name="TicketForm"
                                                 id="flexRadioDefault2">
                                             <label class="form-check-label" for="flexRadioDefault2">
-                                                Moving Services (Off Campus)
+                                                Moving Services
                                             </label>
                                         </div>
                                     </div>
@@ -173,7 +173,7 @@ https://templatemo.com/tm-583-festava-live
                                             <input class="form-check-input" type="radio" name="TicketForm"
                                                 id="flexRadioDefault3">
                                             <label class="form-check-label" for="flexRadioDefault3">
-                                                Moving Services (On Campus)
+                                                Shipping Services
                                             </label>
                                         </div>
                                     </div>
@@ -187,11 +187,77 @@ https://templatemo.com/tm-583-festava-live
                                             </label>
                                         </div>
                                     </div>
+                                    
                                 </div>
                                 
                                 <p id="text"></p>
+
+                                <div class="select">
+
+                                    <select class="form-control" id="ticket-form-select" required disabled>
+                                        <option value="" disabled selected hidden>Select State</option>
+                                        <option value="PA">PA</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DE">DE</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MA">MA</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NY">NY</option>
+                                        <option value="NC">NC</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="VA">VA</option>
+                                        <option value="VT">VT</option>
+                                        <option value="WV">WV</option>
+                                        <option value="AL">AL</option>
+                                        <option value="MS">MS</option>
+                                        <option value="TN">TN</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="IA">IA</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MO">MO</option>
+                                        <option value="NE">NE</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="SD">SD</option>
+                                        <option value="WI">WI</option>
+                                        <option value="AR">AR</option>
+                                        <option value="CO">CO</option>
+                                        <option value="LA">LA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="OK">OK</option>
+                                        <option value="TX">TX</option>
+                                        <option value="WY">WY</option>
+                                        <option value="CA">CA</option>
+                                        <option value="OR">OR</option>
+                                        <option value="WA">WA</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="HI">HI</option>
+                                        <option value="ID">ID</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NM">NM</option>
+                                        <option value="UT">UT</option>
+                                        <option value="International">International</option>
+                                    </select>
+                                    <select class="form-control" id="ticket-form-facility" onchange="updateLink()" required disabled>
+                                        <option value="" disabled selected hidden>Location</option>
+                                        <option value="On-Campus Facility">On-Campus Facility</option>
+                                        <option value="Off-Campus Facility">Off-Campus Facility</option>
+                                    </select>
+                                </div>
+
+
                                 <input type="number" name="ticket-form-number" id="ticket-form-number"
-                                    class="form-control" placeholder="Number of People" required min="1" max="4">
+                                    class="form-control" placeholder="Number of People" required disabled min="1" max="4">
 
                                 <!--
                                 <textarea name="ticket-form-message" rows="3" class="form-control"
@@ -300,6 +366,9 @@ https://templatemo.com/tm-583-festava-live
                             <a href="book" class="site-footer-link footer-navlink">Book Now</a>
                         </li>
 
+                        <li class="site-footer-link-item">
+                            <a href="terms" class="site-footer-link footer-navlink">Terms</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -328,7 +397,7 @@ https://templatemo.com/tm-583-festava-live
                         Lehigh University, Bethlehem, PA</p>
                     
 
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#section_6">
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="home#section_6">
                         <span>Contact Us</span>
                         <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">

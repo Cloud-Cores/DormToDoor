@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Student Storage, Stress Free">
+    <meta name="description" content="Book your Dorm to Door services now!">
     <meta name="author" content="CloudCores">
-    <meta name="keywords" content="Dorm To Door, Student Storage, Moving Services">
+    <meta name="keywords" content="Dorm To Door, Student Storage, Moving Services, Book Dorm To Door">
 
     <title>Dorm to Door, LLC</title>
     <link rel="icon" sizes="40x40" href="images/Dorm to Door/head.png">
-
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +23,15 @@
 
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <link href="css/templatemo-festava-live.css?version=2" rel="stylesheet">
 
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
 </head>
 
 <body>
@@ -49,7 +55,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-lg dark-nav">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="home">
                     <img src="images/Dorm to Door/logothin.png" width="175" class="about-image img-fluid">
@@ -106,51 +112,176 @@
 
 
 
-        <section class="ticket-section section-padding" id="loginFormSection">
+        <section class="payment-section section-padding">
+            <div class="section-overlay"></div>
+
             <div class="container">
-                <div class="row">
+                <div class="form">
 
-                    <div class="col-lg-6 col-10  mx-auto">
-                        <form class="custom-form ticket-form mb-5 mb-lg-0" onsubmit="submitForm(event)" action="#" method="" role="form">
-                            <h3 class="text-center mb-4">Mountain Movers</h3>
+                    <div class="col-lg-6 col-10 mx-auto">
+                        <form class="custom-form ticket-form mb-5 mb-lg-0">
+                            <h2 class="text-center mb-4">Sign Up Here</h2>
 
+                            <!--
                             <div class="ticket-form-body">
-                                <div class="row justify-content-center">
-                                    <h6 class="text-center mb-3">Login</h6>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="ticket-form-name" id="ticket-form-name"
+                                            class="form-control" placeholder="Full Name" required>
+                                    </div>
 
-                                    <div class="col-lg-10 col-md-10">
-                                        <input type="email" name="login-form-email" id="login-form-email"
-                                            pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Address" >
-                                            
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="email" name="ticket-form-email" id="ticket-form-email"
+                                            pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email Address"
+                                            required>
                                     </div>
-                                    <div class="col-lg-10 col-md-10">
-                                        <input type="password" name="login-form-password" id="login-form-password"
-                                        class="form-control" placeholder="Password" minlength="7">
-                                        
+                                </div>
+
+                                <input type="tel" class="form-control" name="ticket-form-phone"
+                                    placeholder="Phone (ex. 085-456-7890)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+
+                            -->
+                                
+                                <div class="price">
+                                    <h6>Price:</h6>
+                                </div>
+                                <div class="price">
+                                    <h6>Choose Your Plan</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Summer Storage
+                                            </label>
+                                        </div>
                                     </div>
-                                    <!-- <a class="text-end">Forgot Password?</a> -->
-                                     <!-- <div class="flex flex-row mb-4 ml-5">
-                                        <input type="checkbox" class="pr-5"/>
-                                        <span >I agree to Terms & Conditions.</span>
-                                     </div> -->
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Moving Services
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                Shipping Services
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="TicketForm"
+                                                id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                Greek Life Moving
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                 
-                                <div class="col-lg-4 col-md-4  mx-auto">
-                                    <button type="submit" class="form-control">Login</button>
+                                
+                                <p id="text"></p>
+
+                                <div class="select">
+
+                                    <select class="form-control" id="ticket-form-select" required disabled>
+                                        <option value="" disabled selected hidden>Select State</option>
+                                        <option value="PA">PA</option>
+                                        <option value="NJ">NJ</option>
+                                        <option value="CT">CT</option>
+                                        <option value="DE">DE</option>
+                                        <option value="FL">FL</option>
+                                        <option value="GA">GA</option>
+                                        <option value="ME">ME</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MA">MA</option>
+                                        <option value="NH">NH</option>
+                                        <option value="NY">NY</option>
+                                        <option value="NC">NC</option>
+                                        <option value="RI">RI</option>
+                                        <option value="SC">SC</option>
+                                        <option value="VA">VA</option>
+                                        <option value="VT">VT</option>
+                                        <option value="WV">WV</option>
+                                        <option value="AL">AL</option>
+                                        <option value="MS">MS</option>
+                                        <option value="TN">TN</option>
+                                        <option value="IL">IL</option>
+                                        <option value="IN">IN</option>
+                                        <option value="IA">IA</option>
+                                        <option value="KS">KS</option>
+                                        <option value="KY">KY</option>
+                                        <option value="MI">MI</option>
+                                        <option value="MN">MN</option>
+                                        <option value="MO">MO</option>
+                                        <option value="NE">NE</option>
+                                        <option value="ND">ND</option>
+                                        <option value="OH">OH</option>
+                                        <option value="SD">SD</option>
+                                        <option value="WI">WI</option>
+                                        <option value="AR">AR</option>
+                                        <option value="CO">CO</option>
+                                        <option value="LA">LA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="OK">OK</option>
+                                        <option value="TX">TX</option>
+                                        <option value="WY">WY</option>
+                                        <option value="CA">CA</option>
+                                        <option value="OR">OR</option>
+                                        <option value="WA">WA</option>
+                                        <option value="AK">AK</option>
+                                        <option value="AZ">AZ</option>
+                                        <option value="HI">HI</option>
+                                        <option value="ID">ID</option>
+                                        <option value="NV">NV</option>
+                                        <option value="NM">NM</option>
+                                        <option value="UT">UT</option>
+                                        <option value="International">International</option>
+                                    </select>
+                                    <select class="form-control" id="ticket-form-facility" onchange="updateLink()" required disabled>
+                                        <option value="" disabled selected hidden>Location</option>
+                                        <option value="On-Campus Facility">On-Campus Facility</option>
+                                        <option value="Off-Campus Facility">Off-Campus Facility</option>
+                                    </select>
                                 </div>
-                                <!-- <p class="text-danger" id="form-error"></p> 
-                                    this is for display form error TEXT on submit event 
-                                -->
-                                <!-- <div> -->
-                                    <p class="text-center mt-5">Don't have an account? &nbsp;
-                                        <a class="" data-bs-toggle="tooltip" title="create an account">Register</a></p>
-                                <!-- </div> -->
+
+
+                                <input type="number" name="ticket-form-number" id="ticket-form-number"
+                                    class="form-control" placeholder="Number of People" required disabled min="1" max="4">
+
+                                <!--
+                                <textarea name="ticket-form-message" rows="3" class="form-control"
+                                    id="ticket-form-message" placeholder="Additional Request(s)"></textarea>
+                            -->
+                                <p class="text-center"> </p>
+                                <div class="col-lg-6  mx-auto">
+                                    
+                                    <button type="submit" class="form-control">Continue to Payment</button>
+                                </div>
                             </div>
                         </form>
+
+                                            <!-- Start of Payments Embed Script -->
+                    <div class="payments-iframe-container" data-src="https://app-na2.hubspot.com/payments/cpgfHPPcjkr?referrer=PAYMENT_LINK_EMBED&layout=embed-full"></div>
+                    <script type="text/javascript" src="https://static.hsappstatic.net/payments-embed/ex/PaymentsEmbedCode.js"></script>
+                    <!-- End of Payments Embed Script -->   
+
                     </div>
                 </div>
         </section>
     </main>
+
+
 
 
     <footer class="site-footer">
@@ -298,13 +429,13 @@
             </div>
         </div>
     </footer>
+
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
-
-    <script src="js/login.js"></script>
+    <script src="js/payment.js"></script>
 
 </body>
 

@@ -653,6 +653,15 @@ strong {
   z-index: 1;
 }
 
+.payment-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 130px;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
 .ticket-section form {
   position: relative;
   z-index: 4;
@@ -678,6 +687,10 @@ strong {
 
 input[type="radio"] {
   display: none;
+}
+
+.ticket-form-select {
+  padding: 50px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1203,6 +1216,11 @@ section.about-us {
   font-weight: 500;
 }
 
+.about-body li {
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
 /* Tabs Navigation */
 section.about-us .naccs {
   position: relative;
@@ -1438,6 +1456,16 @@ section.about-us .right-content p {
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
+.payments-iframe-container {
+  padding: 100px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
 .custom-form .form-control {
   color: var(--p-color);
   margin-bottom: 24px;
